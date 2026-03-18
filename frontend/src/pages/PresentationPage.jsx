@@ -12,6 +12,7 @@ import VoiceAgentsSlide from '@/components/slides/VoiceAgentsSlide';
 import ContentStudioSlide from '@/components/slides/ContentStudioSlide';
 import CodeFoundrySlide from '@/components/slides/CodeFoundrySlide';
 import K12AcademySlide from '@/components/slides/K12AcademySlide';
+import SSOTiersSlide from '@/components/slides/SSOTiersSlide';
 import QuotaSlide from '@/components/slides/QuotaSlide';
 import QuotaArchitectureSlide from '@/components/slides/QuotaArchitectureSlide';
 import MetricsSlide from '@/components/slides/MetricsSlide';
@@ -32,6 +33,7 @@ const slideComponents = {
   ContentStudioSlide,
   CodeFoundrySlide,
   K12AcademySlide,
+  SSOTiersSlide,
   QuotaSlide,
   QuotaArchitectureSlide,
   MetricsSlide,

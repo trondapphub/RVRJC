@@ -245,6 +245,7 @@ export const slides = [
   { id: "content-studio", component: "ContentStudioSlide" },
   { id: "codefoundry", component: "CodeFoundrySlide" },
   { id: "k12-academy", component: "K12AcademySlide" },
+  { id: "sso-tiers", component: "SSOTiersSlide" },
   { id: "quota", component: "QuotaSlide" },
   { id: "quota-architecture", component: "QuotaArchitectureSlide" },
   { id: "metrics", component: "MetricsSlide" },
