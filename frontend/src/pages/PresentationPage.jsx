@@ -6,6 +6,12 @@ import HeroSlide from '@/components/slides/HeroSlide';
 import ProblemSlide from '@/components/slides/ProblemSlide';
 import SolutionSlide from '@/components/slides/SolutionSlide';
 import PlatformsSlide from '@/components/slides/PlatformsSlide';
+import LLMPlatformSlide from '@/components/slides/LLMPlatformSlide';
+import AgentOSSlide from '@/components/slides/AgentOSSlide';
+import VoiceAgentsSlide from '@/components/slides/VoiceAgentsSlide';
+import ContentStudioSlide from '@/components/slides/ContentStudioSlide';
+import CodeFoundrySlide from '@/components/slides/CodeFoundrySlide';
+import K12AcademySlide from '@/components/slides/K12AcademySlide';
 import MetricsSlide from '@/components/slides/MetricsSlide';
 import TimelineSlide from '@/components/slides/TimelineSlide';
 import PricingSlide from '@/components/slides/PricingSlide';
@@ -18,6 +24,12 @@ const slideComponents = {
   ProblemSlide,
   SolutionSlide,
   PlatformsSlide,
+  LLMPlatformSlide,
+  AgentOSSlide,
+  VoiceAgentsSlide,
+  ContentStudioSlide,
+  CodeFoundrySlide,
+  K12AcademySlide,
   MetricsSlide,
   TimelineSlide,
   PricingSlide,
