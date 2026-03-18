@@ -112,10 +112,10 @@ export const platformsData = {
       id: "codefoundry",
       name: "CodeFoundry",
       url: "codefoundry.sh",
-      description: "Autonomous platform for AI startup development",
+      description: "AI builds 20K+ lines of production-ready full-stack code. $15/build.",
       icon: "Terminal",
       color: "#F97316",
-      features: ["Design to Deploy", "Security Analysis", "Risk Prediction", "Cost Intelligence"]
+      features: ["$15/build", "95% Production Ready", "Full-Stack Apps", "2-3 Months → Hours"]
     },
     {
       id: "academy",
@@ -184,7 +184,7 @@ export const pricingData = {
     amount: "7,500",
     currency: "₹",
     period: "per student/year",
-    note: "Bundled AI ecosystem at economical cost"
+    note: "Unlimited access to all features"
   },
   comparison: [
     { tool: "ChatGPT Plus", cost: "₹1,650/mo", annual: "₹19,800/yr" },
@@ -199,7 +199,18 @@ export const pricingData = {
     "Dedicated support & training",
     "Curriculum integration",
     "Project-based learning tools"
-  ]
+  ],
+  codeFoundry: {
+    price: "$15",
+    note: "per build (paid separately)",
+    description: "Anthropic Claude generates 20K+ lines of production-ready full-stack code",
+    highlights: [
+      "Full-stack: Frontend + Backend + Database",
+      "95% production-ready code",
+      "AI startup apps in hours, not months",
+      "10x cost savings vs traditional development"
+    ]
+  }
 };
 
 export const ctaData = {

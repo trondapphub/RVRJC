@@ -26,7 +26,7 @@ const platforms = [
   { id: 'agentOS', name: 'Agent OS', url: 'foundryailabs.io', color: '#8B5CF6', desc: '14+ AI Agents' },
   { id: 'voice', name: 'Voice Agents', url: 'saketh.ai', color: '#10B981', desc: '28+ Languages' },
   { id: 'studio', name: 'Content Studio', url: 'studio.saketh.ai', color: '#EC4899', desc: 'AI Content Tools' },
-  { id: 'codefoundry', name: 'CodeFoundry', url: 'codefoundry.sh', color: '#F97316', desc: 'Build AI Startups' },
+  { id: 'codefoundry', name: 'CodeFoundry', url: 'codefoundry.sh', color: '#F97316', desc: '$15/build • 20K lines' },
   { id: 'academy', name: 'K-12 Academy', url: 'sakethacademy.com', color: '#06B6D4', desc: '108 Courses' }
 ];
 
