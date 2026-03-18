@@ -13,6 +13,7 @@ import ContentStudioSlide from '@/components/slides/ContentStudioSlide';
 import CodeFoundrySlide from '@/components/slides/CodeFoundrySlide';
 import K12AcademySlide from '@/components/slides/K12AcademySlide';
 import QuotaSlide from '@/components/slides/QuotaSlide';
+import QuotaArchitectureSlide from '@/components/slides/QuotaArchitectureSlide';
 import MetricsSlide from '@/components/slides/MetricsSlide';
 import TimelineSlide from '@/components/slides/TimelineSlide';
 import PricingSlide from '@/components/slides/PricingSlide';
@@ -32,6 +33,7 @@ const slideComponents = {
   CodeFoundrySlide,
   K12AcademySlide,
   QuotaSlide,
+  QuotaArchitectureSlide,
   MetricsSlide,
   TimelineSlide,
   PricingSlide,

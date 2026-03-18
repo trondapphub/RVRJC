@@ -133,7 +133,7 @@ export const metricsData = {
   title: "Expected Impact",
   subtitle: "Transforming RVRJC in 60 Days",
   metrics: [
-    { value: "7,000", label: "AI-Enabled Students", icon: "Users", color: "blue" },
+    { value: "7000", label: "AI-Enabled Students", icon: "Users", color: "blue" },
     { value: "300+", label: "AI Projects", icon: "Rocket", color: "orange" },
     { value: "12", label: "Indian Languages", icon: "Globe", color: "green" },
     { value: "60", label: "Days to Launch", icon: "Calendar", color: "purple" }
@@ -246,6 +246,7 @@ export const slides = [
   { id: "codefoundry", component: "CodeFoundrySlide" },
   { id: "k12-academy", component: "K12AcademySlide" },
   { id: "quota", component: "QuotaSlide" },
+  { id: "quota-architecture", component: "QuotaArchitectureSlide" },
   { id: "metrics", component: "MetricsSlide" },
   { id: "timeline", component: "TimelineSlide" },
   { id: "pricing", component: "PricingSlide" },
