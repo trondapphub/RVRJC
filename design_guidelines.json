@@ -1,0 +1,142 @@
+{
+  "design_vision": {
+    "theme": "The Cognitive Bridge",
+    "core_concept": "Connecting traditional academic excellence with futuristic AI infrastructure. The design oscillates between 'Clean Academic Authority' (Light Mode) and 'Deep Tech Immersion' (Dark Mode).",
+    "emotional_tone": "Prestigious, Transformational, High-Velocity, Trustworthy.",
+    "modes": {
+      "presentation": "Immersive, slide-based, scrollytelling, high-impact visuals.",
+      "dashboard": "Dense, functional, data-rich, bento-grid layout."
+    }
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["600", "700"],
+      "tracking": "-0.02em",
+      "usage": "Main titles, slide headers, key metric numbers. Use 'Outfit' for a balance of geometric modernism and friendly approachability."
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, data labels, UI elements. 'Manrope' is excellent for interface legibility and numeric data."
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "usage": "Code snippets, technical specs, 'CodeFoundry' branding."
+    }
+  },
+  "colors": {
+    "light_mode": {
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "surface_highlight": "#F1F5F9",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "border": "#E2E8F0",
+      "primary": "#0F172A",
+      "accent": "#2563EB"
+    },
+    "dark_mode": {
+      "background": "#020617",
+      "surface": "#0F172A",
+      "surface_highlight": "#1E293B",
+      "text_primary": "#F8FAFC",
+      "text_secondary": "#94A3B8",
+      "border": "#1E293B",
+      "primary": "#3B82F6",
+      "accent": "#F97316"
+    },
+    "brand_palette": {
+      "foundry_orange": "#F97316",
+      "ai_blue": "#3B82F6",
+      "success_green": "#10B981",
+      "alert_red": "#EF4444"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at center, rgba(59,130,246,0.15) 0%, rgba(0,0,0,0) 70%)",
+      "card_surface": "linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)"
+    }
+  },
+  "layout_system": {
+    "presentation_mode": {
+      "structure": "Full-screen sections (100vh)",
+      "navigation": "Floating dot indicators or progress bar",
+      "transition": "Smooth scroll-snap or framer-motion slide effects"
+    },
+    "dashboard_mode": {
+      "structure": "Responsive Grid (Bento)",
+      "gap": "gap-4 md:gap-6",
+      "container": "max-w-7xl mx-auto px-4 md:px-8"
+    },
+    "spacing": {
+      "section_padding": "py-20 md:py-32",
+      "card_padding": "p-6 md:p-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-3 font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5",
+      "secondary": "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full px-8 py-3 font-medium transition-all",
+      "ghost": "hover:bg-accent hover:text-accent-foreground rounded-md px-4 py-2"
+    },
+    "cards": {
+      "style": "Glassmorphism or Flat Tech",
+      "classes": "bg-card text-card-foreground rounded-xl border border-border shadow-sm hover:shadow-md transition-all duration-300 group relative overflow-hidden",
+      "interactive": "hover:border-primary/50 cursor-pointer"
+    },
+    "visual_enhancers": {
+      "glow_effects": "Use subtle radial gradients behind key images or metrics.",
+      "grid_lines": "Use 'bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]' for technical backgrounds.",
+      "glass": "backdrop-blur-md bg-white/10 dark:bg-black/20 border border-white/20"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1764336312138-14a5368a6cd3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG5ldXJhbCUyMG5ldHdvcmslMjB0ZWNobm9sb2d5JTIwYmx1ZXxlbnwwfHx8fDE3NzM4NDUxMjZ8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Abstract AI Neural Network Head",
+        "usage": "Hero section background, overlay with dark gradient"
+      },
+      "campus_life": {
+        "url": "https://images.unsplash.com/photo-1680084521816-cc1ad0433ceb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBjb2xsZWdlJTIwc3R1ZGVudHMlMjBjYW1wdXMlMjBkaXNjdXNzaW9ufGVufDB8fHx8MTc3Mzg0NTEyNHww&ixlib=rb-4.1.0&q=85",
+        "alt": "College Campus Building",
+        "usage": "Background for 'RVRJC Context' slide"
+      },
+      "coding_student": {
+        "url": "https://images.unsplash.com/photo-1646756089735-487709743361?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxzdHVkZW50JTIwY29kaW5nJTIwbGFwdG9wJTIwbGlicmFyeXxlbnwwfHx8fDE3NzM4NDUxMjZ8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Student Coding",
+        "usage": "CodeFoundry section or Student Impact slide"
+      },
+      "ai_lab": {
+        "url": "https://images.unsplash.com/photo-1705871433057-4bf8911f136f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwYWklMjBsYWJvcmF0b3J5JTIwZGF0YSUyMHNjcmVlbnxlbnwwfHx8fDE3NzM4NDUxMjZ8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Futuristic AI Lab Blue Light",
+        "usage": "AI CoE Vision section"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px, size 24px or 48px for features"
+    }
+  },
+  "data_visualization": {
+    "charts": "Recharts or Shadcn Charts. Use 'AreaChart' for growth trends, 'BarChart' for comparisons, 'PieChart' for distribution.",
+    "colors": ["#3B82F6", "#F97316", "#10B981", "#8B5CF6", "#EC4899"]
+  },
+  "accessibility": {
+    "contrast": "Ensure text contrast ratio of 4.5:1. Use 'text-shadow' on text over images.",
+    "motion": "Respect 'prefers-reduced-motion'. Wrap animations in motion-safe checks.",
+    "focus": "Visible focus rings 'focus:ring-2 focus:ring-primary focus:ring-offset-2'"
+  },
+  "tech_stack_instructions": {
+    "routing": "Use React Router. Create a '/presentation' route for the slide deck and '/' for the main dashboard/landing.",
+    "state": "Use simple local state or Context API for the presentation slide index.",
+    "animation": "Framer Motion is PREFERRED for slide transitions and card hover effects."
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Inter' for headings. Use 'Outfit'.",
+    "Avoid full-screen gradients. Use mesh gradients or subtle spotlights.",
+    "Interactive elements must have micro-interactions (hover, click).",
+    "Use 'sonner' for all toast notifications.",
+    "Components must use 'data-testid' for testing."
+  ]
+}
