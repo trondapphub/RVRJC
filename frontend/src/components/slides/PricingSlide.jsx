@@ -46,7 +46,7 @@ const PricingSlide = () => {
 
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-1">FoundryAI Ecosystem</h3>
-                <p className="text-sm text-muted-foreground">Unlimited access to all features</p>
+                <p className="text-sm text-muted-foreground">Access to all 6 platforms with fair usage quotas</p>
               </div>
 
               {/* Price */}

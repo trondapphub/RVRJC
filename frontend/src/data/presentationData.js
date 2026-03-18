@@ -184,7 +184,7 @@ export const pricingData = {
     amount: "7,500",
     currency: "₹",
     period: "per student/year",
-    note: "Unlimited access to all features"
+    note: "Fair usage with monthly quotas"
   },
   comparison: [
     { tool: "ChatGPT Plus", cost: "₹1,650/mo", annual: "₹19,800/yr" },
