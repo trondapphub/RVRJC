@@ -44,22 +44,22 @@ const WhyAINowSlide = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-5"
+          className="text-center mb-3"
         >
-          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-4 border border-red-500/30">
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-2 border border-red-500/30">
             <AlertTriangle className="h-4 w-4 text-red-500" />
             <span className="text-sm font-bold text-red-400">Non-Negotiable</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">
             Why AI Enablement is <span className="text-red-400">Mandatory</span> Now
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-sm text-muted-foreground max-w-3xl mx-auto">
             This is not optional. This is about the future survival and leadership of RVRJC as an Autonomous University.
           </p>
         </motion.div>
 
         {/* 4 Urgency Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
           {urgencyPoints.map((point, index) => {
             const Icon = point.icon;
             return (
@@ -68,18 +68,18 @@ const WhyAINowSlide = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + index * 0.08 }}
-                className="glass rounded-xl p-5 border border-border hover:bg-white/5 transition-all"
+                className="glass rounded-xl p-3 border border-border hover:bg-white/5 transition-all"
               >
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-3">
                   <div
-                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                    className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
                     style={{ backgroundColor: `${point.color}20` }}
                   >
-                    <Icon className="h-5 w-5" style={{ color: point.color }} />
+                    <Icon className="h-4 w-4" style={{ color: point.color }} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-base mb-1" style={{ color: point.color }}>{point.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{point.desc}</p>
+                    <h4 className="font-bold text-sm mb-0.5" style={{ color: point.color }}>{point.title}</h4>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{point.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -88,18 +88,18 @@ const WhyAINowSlide = () => {
         </div>
 
         {/* Cost of Inaction vs Action */}
-        <div className="grid grid-cols-2 gap-4 mb-5">
+        <div className="grid grid-cols-2 gap-3 mb-3">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.45 }}
-            className="glass rounded-xl p-5 border border-red-500/30 bg-red-500/5"
+            className="glass rounded-xl p-3 border border-red-500/30 bg-red-500/5"
           >
-            <div className="flex items-center gap-2 mb-3">
-              <Shield className="h-5 w-5 text-red-500" />
-              <span className="font-bold text-red-400">Cost of Inaction</span>
+            <div className="flex items-center gap-2 mb-2">
+              <Shield className="h-4 w-4 text-red-500" />
+              <span className="font-bold text-sm text-red-400">Cost of Inaction</span>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-1.5">
               {[
                 'Declining placement rates year-over-year',
                 'Best students choose AI-enabled colleges',
@@ -107,7 +107,7 @@ const WhyAINowSlide = () => {
                 'Faculty becomes irrelevant to industry',
                 'College loses autonomous edge'
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm">
+                <div key={i} className="flex items-center gap-2 text-xs">
                   <div className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0" />
                   <span className="text-muted-foreground">{item}</span>
                 </div>
@@ -119,13 +119,13 @@ const WhyAINowSlide = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5 }}
-            className="glass rounded-xl p-5 border border-green-500/30 bg-green-500/5"
+            className="glass rounded-xl p-3 border border-green-500/30 bg-green-500/5"
           >
-            <div className="flex items-center gap-2 mb-3">
-              <Globe2 className="h-5 w-5 text-green-500" />
-              <span className="font-bold text-green-400">Result of Action</span>
+            <div className="flex items-center gap-2 mb-2">
+              <Globe2 className="h-4 w-4 text-green-500" />
+              <span className="font-bold text-sm text-green-400">Result of Action</span>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-1.5">
               {[
                 'RVRJC becomes #1 AI college in the region',
                 'Students graduate as AI engineers & builders',
@@ -133,7 +133,7 @@ const WhyAINowSlide = () => {
                 'National Top 50 ranking within 3 years',
                 'Industry partnerships & startup culture'
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm">
+                <div key={i} className="flex items-center gap-2 text-xs">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0" />
                   <span className="text-muted-foreground">{item}</span>
                 </div>
@@ -147,17 +147,14 @@ const WhyAINowSlide = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6 }}
-          className="glass rounded-xl p-5 text-center border border-amber-500/30 bg-amber-500/5"
+          className="glass rounded-xl p-3 text-center border border-amber-500/30 bg-amber-500/5"
         >
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <Zap className="h-5 w-5 text-amber-500" />
-          </div>
-          <blockquote className="text-lg md:text-xl font-bold">
+          <blockquote className="text-base md:text-lg font-bold">
+            <Zap className="h-4 w-4 text-amber-500 inline mr-1" />
             "The question is not <span className="text-red-400">whether</span> to adopt AI.
-            <br />
             The question is <span className="text-green-400">how fast</span> can RVRJC lead the way."
           </blockquote>
-          <p className="text-sm text-muted-foreground mt-2">
+          <p className="text-xs text-muted-foreground mt-1">
             Every semester of delay is a generation of students left behind.
           </p>
         </motion.div>
