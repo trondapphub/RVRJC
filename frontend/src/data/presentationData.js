@@ -237,6 +237,7 @@ export const ctaData = {
 export const slides = [
   { id: "founder-intro", component: "FounderIntroSlide" },
   { id: "why-ai-now", component: "WhyAINowSlide" },
+  { id: "mandatory-enrollment", component: "MandatoryEnrollmentSlide" },
   { id: "transformation", component: "TransformationSlide" },
   { id: "placement-impact", component: "PlacementImpactSlide" },
   { id: "ranking-impact", component: "RankingImpactSlide" },
