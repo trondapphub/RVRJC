@@ -16,6 +16,7 @@ import SSOTiersSlide from '@/components/slides/SSOTiersSlide';
 import QuotaSlide from '@/components/slides/QuotaSlide';
 import QuotaArchitectureSlide from '@/components/slides/QuotaArchitectureSlide';
 import TransformationSlide from '@/components/slides/TransformationSlide';
+import WhyAINowSlide from '@/components/slides/WhyAINowSlide';
 import PlacementImpactSlide from '@/components/slides/PlacementImpactSlide';
 import RankingImpactSlide from '@/components/slides/RankingImpactSlide';
 import StudentOpportunitiesSlide from '@/components/slides/StudentOpportunitiesSlide';
@@ -44,6 +45,7 @@ const slideComponents = {
   QuotaSlide,
   QuotaArchitectureSlide,
   TransformationSlide,
+  WhyAINowSlide,
   PlacementImpactSlide,
   RankingImpactSlide,
   StudentOpportunitiesSlide,

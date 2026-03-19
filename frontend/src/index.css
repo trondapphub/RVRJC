@@ -48,7 +48,7 @@
   --secondary: 217.2 32.6% 12%;
   --secondary-foreground: 210 40% 98%;
   --muted: 217.2 32.6% 12%;
-  --muted-foreground: 215 20.2% 65.1%;
+  --muted-foreground: 215 20.2% 76%;
   --accent: 24.6 95% 53.1%;
   --accent-foreground: 222.2 47.4% 11.2%;
   --destructive: 0 62.8% 30.6%;
@@ -216,6 +216,27 @@ code, pre {
 
 .metric-card:hover::before {
   transform: scaleX(1);
+}
+
+/* Presentation text visibility boost */
+[data-testid="presentation-page"] .text-xs {
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+[data-testid="presentation-page"] .text-sm {
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+
+[data-testid="presentation-page"] .text-base {
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+[data-testid="presentation-page"] .text-lg {
+  font-size: 1.1875rem;
+  line-height: 1.45;
 }
 
 @layer base {
