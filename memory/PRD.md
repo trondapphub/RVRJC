@@ -10,7 +10,7 @@ Enhance 3 documents (RVRJC_AI_CoE_Pitch.pptx, RVRJC_AI_CoE_Proposal.pdf, Foundry
 - **Secondary**: College administration, potential partners
 
 ## Core Requirements
-- Interactive slide-based presentation (8 slides)
+- Interactive slide-based presentation (now 22 slides)
 - Dashboard with key metrics visualization
 - Live demo integration with llm.foundryailabs.io
 - Platform ecosystem showcase (6 platforms)
@@ -25,9 +25,11 @@ Frontend: React 19 + Tailwind CSS + Framer Motion
 Backend: FastAPI (minimal - mainly for health checks)
 Charts: Recharts (Area, Bar, Pie charts)
 Routing: React Router DOM
+Deployment: AWS Lightsail (manual) via Nginx + Let's Encrypt SSL
+Domain: demo.foundryailabs.ai (Cloudflare DNS)
 ```
 
-## What's Been Implemented (Jan 18, 2026)
+## What's Been Implemented
 
 ### Dashboard Page (/)
 - [x] Hero section with gradient title "AI Center of Excellence"
@@ -39,15 +41,29 @@ Routing: React Router DOM
 - [x] CTA section with live demo links
 - [x] Dark/Light theme toggle
 
-### Presentation Page (/presentation)
+### Presentation Page (/presentation) - 22 Slides
 - [x] Slide 1: Hero - "AI Transformation at RVRJC"
 - [x] Slide 2: Problem - Current fragmented AI usage
 - [x] Slide 3: Solution - FoundryAI unified ecosystem
 - [x] Slide 4: Platforms - 6 platforms showcase
-- [x] Slide 5: Metrics - Expected impact (animated counters)
-- [x] Slide 6: Timeline - 60-day implementation roadmap
-- [x] Slide 7: Pricing - ₹7,500/student vs individual subscriptions
-- [x] Slide 8: CTA - Partnership call-to-action
+- [x] Slide 5: LLM Platform (llm.foundryailabs.io)
+- [x] Slide 6: Agent OS (foundryailabs.io)
+- [x] Slide 7: Voice Agents (saketh.ai)
+- [x] Slide 8: Content Studio (studio.saketh.ai) - Top 5 Features
+- [x] Slide 9: CodeFoundry (codefoundry.sh) - Top 5 Features
+- [x] Slide 10: K-12 Academy (sakethacademy.com) - Top 5 Features
+- [x] Slide 11: SSO & Tiered Pricing
+- [x] Slide 12: Quota System
+- [x] Slide 13: Quota Architecture
+- [x] Slide 14: College Transformation
+- [x] Slide 15: Placement Impact
+- [x] Slide 16: Ranking Impact
+- [x] Slide 17: Student Opportunities - What Students Will Build (NEW)
+- [x] Slide 18: Career Impact - From Students to AI Engineers (NEW)
+- [x] Slide 19: Metrics - Expected Impact
+- [x] Slide 20: Timeline - 60-day Implementation
+- [x] Slide 21: Pricing - ₹9,999/year
+- [x] Slide 22: CTA - Partnership call-to-action
 
 ### Navigation Features
 - [x] Keyboard navigation (↑↓ arrows)
@@ -58,26 +74,27 @@ Routing: React Router DOM
 
 ## Prioritized Backlog
 
-### P0 (Critical) - Complete ✅
-- All core features implemented
+### P0 (Critical)
+- [ ] Update LLMPlatformSlide, AgentOSSlide, VoiceAgentsSlide to "Top 5 Features" format (pending user-provided feature lists)
+- [ ] Guide user to redeploy after all content updates
 
 ### P1 (High Priority)
-- [ ] Add animated slide transitions between slides
-- [ ] Export presentation to PDF
-- [ ] Presenter notes view
+- [ ] Implement Central Quota Service (FastAPI + Redis + MongoDB)
+- [ ] Implement Single Sign-On (SSO) across platforms
+- [ ] Refactor presentationData.js into smaller data files
 
 ### P2 (Medium Priority)
 - [ ] Analytics tracking for demo engagement
 - [ ] Mobile-optimized presentation view
-- [ ] Embedded video support
+- [ ] Export presentation to PDF
+- [ ] Presenter notes view
 
 ### Future Enhancements
 - [ ] Multi-language support (Hindi, Telugu)
 - [ ] Admin panel for content editing
 - [ ] Real-time collaboration features
-- [ ] Integration with Google Slides export
 
 ## Next Tasks
-1. User can test live demo at llm.foundryailabs.io
-2. Consider adding presenter notes for HODs meeting
-3. Potential: Add QR code for quick platform access
+1. Get user feedback on new Student Opportunities and Career Impact slides
+2. Collect detailed "Top 5 Features" content for LLM Platform, Agent OS, Voice Agents slides
+3. Redeploy to demo.foundryailabs.ai once content updates are finalized

@@ -18,6 +18,8 @@ import QuotaArchitectureSlide from '@/components/slides/QuotaArchitectureSlide';
 import TransformationSlide from '@/components/slides/TransformationSlide';
 import PlacementImpactSlide from '@/components/slides/PlacementImpactSlide';
 import RankingImpactSlide from '@/components/slides/RankingImpactSlide';
+import StudentOpportunitiesSlide from '@/components/slides/StudentOpportunitiesSlide';
+import CareerImpactSlide from '@/components/slides/CareerImpactSlide';
 import MetricsSlide from '@/components/slides/MetricsSlide';
 import TimelineSlide from '@/components/slides/TimelineSlide';
 import PricingSlide from '@/components/slides/PricingSlide';
@@ -42,6 +44,8 @@ const slideComponents = {
   TransformationSlide,
   PlacementImpactSlide,
   RankingImpactSlide,
+  StudentOpportunitiesSlide,
+  CareerImpactSlide,
   MetricsSlide,
   TimelineSlide,
   PricingSlide,

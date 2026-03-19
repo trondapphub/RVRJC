@@ -251,6 +251,8 @@ export const slides = [
   { id: "transformation", component: "TransformationSlide" },
   { id: "placement-impact", component: "PlacementImpactSlide" },
   { id: "ranking-impact", component: "RankingImpactSlide" },
+  { id: "student-opportunities", component: "StudentOpportunitiesSlide" },
+  { id: "career-impact", component: "CareerImpactSlide" },
   { id: "metrics", component: "MetricsSlide" },
   { id: "timeline", component: "TimelineSlide" },
   { id: "pricing", component: "PricingSlide" },
