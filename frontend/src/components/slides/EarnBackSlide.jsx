@@ -77,11 +77,11 @@ const EarnBackSlide = () => {
         >
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-3">
             <Target className="h-4 w-4 text-green-500" />
-            <span className="text-sm font-medium">Earn Back Your Fees</span>
+            <span className="text-sm font-medium">Earn Back ₹9,999/yr</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">How Students Earn Back ₹7,500</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">How Students Earn Back ₹9,999</h2>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-            Spend ₹7,500 → Earn ₹10,000 – ₹1,00,000 using AI skills on this platform
+            Spend ₹9,999 → Earn ₹10,000 – ₹1,00,000 using AI skills on this platform
           </p>
         </motion.div>
 
@@ -139,7 +139,7 @@ const EarnBackSlide = () => {
         >
           <div className="flex items-center justify-around flex-wrap gap-3 text-center">
             <div className="p-2 rounded-lg bg-red-500/10 border border-red-500/20">
-              <div className="text-lg font-bold text-red-400">₹7,500</div>
+              <div className="text-lg font-bold text-red-400">₹9,999</div>
               <div className="text-xs text-muted-foreground">Investment</div>
             </div>
             <div className="text-muted-foreground">→</div>
