@@ -181,7 +181,7 @@ export const pricingData = {
   title: "Investment & Value",
   subtitle: "10x Capabilities at Lower Cost",
   price: {
-    amount: "7,500",
+    amount: "9,999",
     currency: "₹",
     period: "per student/year",
     note: "Fair usage with monthly quotas"

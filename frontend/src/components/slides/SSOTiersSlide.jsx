@@ -4,7 +4,7 @@ import { Key, Users, ArrowUpCircle, Shield, CheckCircle2, Zap, Coins, Plus } fro
 const tiers = [
   {
     name: 'Basic',
-    price: '7,500',
+    price: '9,999',
     period: '/year',
     description: 'Starting tier for all',
     creditsYear: '90,000',
@@ -16,37 +16,37 @@ const tiers = [
   },
   {
     name: 'Pro',
-    price: '12,000',
+    price: '14,999',
     period: '/year',
     description: 'For regular heavy users',
     creditsYear: '180,000',
     creditsMonth: '15,000',
     color: '#8B5CF6',
-    features: ['2x monthly credits', 'Priority support', 'Upgrade: +₹4,500'],
+    features: ['2x monthly credits', 'Priority support', 'Upgrade: +₹5,000'],
     popular: true,
     isBase: false
   },
   {
     name: 'Power',
-    price: '18,000',
+    price: '21,999',
     period: '/year',
     description: 'For AI enthusiasts',
     creditsYear: '400,000',
     creditsMonth: '33,000',
     color: '#F97316',
-    features: ['4.4x monthly credits', 'Early access', 'Upgrade: +₹10,500'],
+    features: ['4.4x monthly credits', 'Early access', 'Upgrade: +₹12,000'],
     popular: false,
     isBase: false
   },
   {
     name: 'Unlimited',
-    price: '30,000',
+    price: '34,999',
     period: '/year',
     description: 'For researchers',
     creditsYear: '1,000,000',
     creditsMonth: '83,000',
     color: '#10B981',
-    features: ['Soft cap (fair use)', 'VIP support', 'Upgrade: +₹22,500'],
+    features: ['Soft cap (fair use)', 'VIP support', 'Upgrade: +₹25,000'],
     popular: false,
     isBase: false
   }
