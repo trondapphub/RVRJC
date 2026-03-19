@@ -1,20 +1,25 @@
 import { motion } from 'framer-motion';
-import { Gauge, Shield, Bell, TrendingUp, Users, Zap } from 'lucide-react';
+import { Gauge, Shield, Bell, TrendingUp, Coins, Zap } from 'lucide-react';
 
-const quotaLimits = [
-  { platform: 'LLM Platform', limit: '100K tokens', daily: '4K/day', color: '#3B82F6', percent: 13 },
-  { platform: 'Agent OS', limit: '100 executions', daily: '5/day', color: '#8B5CF6', percent: 16 },
-  { platform: 'Voice Agents', limit: '30 mins', daily: '2 mins/day', color: '#10B981', percent: 24 },
-  { platform: 'Content Studio', limit: '20 images', daily: '3/day', color: '#EC4899', percent: 16 },
-  { platform: 'CodeFoundry', limit: '$15/build', daily: 'Pay per use', color: '#F97316', percent: 0 },
-  { platform: 'K-12 Academy', limit: '200 sessions', daily: '10/day', color: '#06B6D4', percent: 24 }
+const tiers = [
+  { name: 'Basic', price: '₹7,500', creditsYear: '90,000', creditsMonth: '7,500', color: '#3B82F6' },
+  { name: 'Pro', price: '₹12,000', creditsYear: '180,000', creditsMonth: '15,000', color: '#8B5CF6' },
+  { name: 'Power', price: '₹18,000', creditsYear: '400,000', creditsMonth: '33,000', color: '#F97316' },
+  { name: 'Unlimited', price: '₹30,000', creditsYear: '1,000,000', creditsMonth: '83,000', color: '#10B981' }
+];
+
+const creditCosts = [
+  { platform: 'LLM Platform', unit: '10 tokens', credits: 1, color: '#3B82F6' },
+  { platform: 'Agent OS', unit: '1 execution', credits: 1, color: '#8B5CF6' },
+  { platform: 'Voice Agents', unit: '1 second', credits: 1, color: '#10B981' },
+  { platform: 'Content Studio', unit: '1 image', credits: 10, color: '#EC4899' },
+  { platform: 'K-12 Academy', unit: '1 session', credits: 1, color: '#06B6D4' }
 ];
 
 const alerts = [
   { level: '50%', action: 'Info notification', color: 'text-blue-400' },
-  { level: '80%', action: 'Warning email', color: 'text-yellow-400' },
-  { level: '100%', action: 'Soft block + upgrade prompt', color: 'text-orange-400' },
-  { level: '110%', action: 'Hard block until reset', color: 'text-red-400' }
+  { level: '80%', action: 'Upgrade prompt', color: 'text-yellow-400' },
+  { level: '100%', action: 'Soft block + upgrade', color: 'text-orange-400' }
 ];
 
 const QuotaSlide = () => {
@@ -36,17 +41,17 @@ const QuotaSlide = () => {
           className="text-center mb-8"
         >
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-4">
-            <Gauge className="h-4 w-4 text-blue-500" />
-            <span className="text-sm font-medium">Fair Usage Policy</span>
+            <Coins className="h-4 w-4 text-yellow-500" />
+            <span className="text-sm font-medium">Universal Credits</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-3">Quota & Usage Limits</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-3">Credit-Based Usage</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            ₹625/student/month budget with transparent limits across all platforms
+            One credit wallet for all platforms. Use anywhere, track everywhere.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Platform Quotas */}
+          {/* Tier Credits */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -55,47 +60,43 @@ const QuotaSlide = () => {
           >
             <div className="glass rounded-2xl p-6 border border-border">
               <h3 className="font-semibold mb-4 flex items-center gap-2">
-                <Users className="h-5 w-5 text-blue-500" />
-                Monthly Limits Per Student
+                <TrendingUp className="h-5 w-5 text-green-500" />
+                Credits Per Tier
               </h3>
-              <div className="grid grid-cols-2 gap-3">
-                {quotaLimits.map((item, index) => (
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {tiers.map((tier, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 + index * 0.05 }}
-                    className="glass rounded-xl p-4 border border-border/50"
+                    className="glass rounded-xl p-4 border border-border/50 text-center"
                   >
-                    <div className="flex items-center gap-2 mb-2">
-                      <div 
-                        className="w-3 h-3 rounded-full"
-                        style={{ backgroundColor: item.color }}
-                      />
-                      <span className="text-sm font-medium">{item.platform}</span>
-                    </div>
-                    <div className="text-xl font-bold" style={{ color: item.color }}>
-                      {item.limit}
-                    </div>
-                    <div className="text-xs text-muted-foreground">{item.daily}</div>
-                    {item.percent > 0 && (
-                      <div className="mt-2 h-1.5 bg-muted rounded-full overflow-hidden">
-                        <div 
-                          className="h-full rounded-full"
-                          style={{ 
-                            width: `${item.percent * 4}%`, 
-                            backgroundColor: item.color 
-                          }}
-                        />
-                      </div>
-                    )}
+                    <div className="font-bold text-lg" style={{ color: tier.color }}>{tier.name}</div>
+                    <div className="text-xs text-muted-foreground mb-2">{tier.price}/year</div>
+                    <div className="text-2xl font-bold" style={{ color: tier.color }}>{tier.creditsMonth}</div>
+                    <div className="text-xs text-muted-foreground">credits/month</div>
                   </motion.div>
                 ))}
+              </div>
+              
+              {/* Credit Costs */}
+              <div className="mt-6">
+                <h4 className="text-sm font-medium mb-3">Credit Cost Per Platform</h4>
+                <div className="grid grid-cols-5 gap-2">
+                  {creditCosts.map((item, index) => (
+                    <div key={index} className="text-center p-2 rounded-lg" style={{ backgroundColor: `${item.color}10` }}>
+                      <div className="text-xs font-medium" style={{ color: item.color }}>{item.platform}</div>
+                      <div className="text-lg font-bold mt-1">{item.credits}</div>
+                      <div className="text-xs text-muted-foreground">credit = {item.unit}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Alert Thresholds */}
+          {/* Alerts & Benefits */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -125,15 +126,15 @@ const QuotaSlide = () => {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <Zap className="h-3 w-3 text-green-500" />
+                  Flexible usage across platforms
+                </li>
+                <li className="flex items-center gap-2">
+                  <Zap className="h-3 w-3 text-green-500" />
                   Predictable costs for institution
                 </li>
                 <li className="flex items-center gap-2">
                   <Zap className="h-3 w-3 text-green-500" />
-                  Fair access for all students
-                </li>
-                <li className="flex items-center gap-2">
-                  <Zap className="h-3 w-3 text-green-500" />
-                  Prevents abuse & overspending
+                  Easy upgrade path
                 </li>
                 <li className="flex items-center gap-2">
                   <Zap className="h-3 w-3 text-green-500" />
@@ -144,38 +145,21 @@ const QuotaSlide = () => {
           </motion.div>
         </div>
 
-        {/* Budget allocation bar */}
+        {/* Note about CodeFoundry */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mt-6 glass rounded-xl p-4"
+          className="mt-6 glass rounded-xl p-4 border border-orange-500/30"
         >
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-medium">Budget Allocation (₹625/month)</span>
-            <span className="text-sm text-muted-foreground">7% buffer included</span>
-          </div>
-          <div className="h-4 rounded-full overflow-hidden flex">
-            {quotaLimits.filter(q => q.percent > 0).map((item, index) => (
-              <div
-                key={index}
-                className="h-full transition-all"
-                style={{ 
-                  width: `${item.percent}%`, 
-                  backgroundColor: item.color 
-                }}
-                title={`${item.platform}: ${item.percent}%`}
-              />
-            ))}
-            <div className="h-full bg-gray-500" style={{ width: '7%' }} title="Buffer: 7%" />
-          </div>
-          <div className="flex flex-wrap gap-3 mt-3">
-            {quotaLimits.filter(q => q.percent > 0).map((item, index) => (
-              <div key={index} className="flex items-center gap-1 text-xs">
-                <div className="w-2 h-2 rounded-full" style={{ backgroundColor: item.color }} />
-                <span className="text-muted-foreground">{item.platform}</span>
-              </div>
-            ))}
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-orange-500/20 flex items-center justify-center">
+              <span className="text-orange-500 font-bold">CF</span>
+            </div>
+            <div>
+              <span className="font-medium">CodeFoundry:</span>
+              <span className="text-muted-foreground text-sm ml-2">$15/build (separate from credits) - Students pay per build for full-stack AI app generation</span>
+            </div>
           </div>
         </motion.div>
       </div>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Key, Users, ArrowUpCircle, Shield, CheckCircle2, Zap } from 'lucide-react';
+import { Key, Users, ArrowUpCircle, Shield, CheckCircle2, Zap, Coins } from 'lucide-react';
 
 const tiers = [
   {
@@ -7,9 +7,10 @@ const tiers = [
     price: '7,500',
     period: '/year',
     description: 'For regular students',
-    multiplier: '1x',
+    creditsYear: '90,000',
+    creditsMonth: '7,500',
     color: '#3B82F6',
-    features: ['100K LLM tokens/mo', '100 Agent runs/mo', '30 mins voice/mo', '20 images/mo'],
+    features: ['Access to all 6 platforms', 'Basic support', 'Usage dashboard'],
     popular: false
   },
   {
@@ -17,9 +18,10 @@ const tiers = [
     price: '12,000',
     period: '/year',
     description: 'For heavy users',
-    multiplier: '2x',
+    creditsYear: '180,000',
+    creditsMonth: '15,000',
     color: '#8B5CF6',
-    features: ['200K LLM tokens/mo', '200 Agent runs/mo', '60 mins voice/mo', '40 images/mo'],
+    features: ['2x credits vs Basic', 'Priority support', 'Advanced analytics'],
     popular: true
   },
   {
@@ -27,9 +29,10 @@ const tiers = [
     price: '18,000',
     period: '/year',
     description: 'For AI enthusiasts',
-    multiplier: '5x',
+    creditsYear: '400,000',
+    creditsMonth: '33,000',
     color: '#F97316',
-    features: ['500K LLM tokens/mo', '500 Agent runs/mo', '150 mins voice/mo', '100 images/mo'],
+    features: ['4.4x credits vs Basic', 'Dedicated support', 'Early access features'],
     popular: false
   },
   {
@@ -37,18 +40,27 @@ const tiers = [
     price: '30,000',
     period: '/year',
     description: 'For researchers',
-    multiplier: '∞',
+    creditsYear: '1,000,000',
+    creditsMonth: '83,000',
     color: '#10B981',
-    features: ['Unlimited LLM tokens', 'Unlimited Agent runs', 'Unlimited voice', 'Unlimited images'],
+    features: ['Soft cap (fair use)', 'VIP support', 'Custom integrations'],
     popular: false
   }
+];
+
+const creditUsage = [
+  { platform: 'LLM Platform', cost: '1 credit = 10 tokens', color: '#3B82F6' },
+  { platform: 'Agent OS', cost: '1 credit = 1 execution', color: '#8B5CF6' },
+  { platform: 'Voice Agents', cost: '1 credit = 1 second', color: '#10B981' },
+  { platform: 'Content Studio', cost: '10 credits = 1 image', color: '#EC4899' },
+  { platform: 'CodeFoundry', cost: '$15/build (separate)', color: '#F97316' },
+  { platform: 'K-12 Academy', cost: '1 credit = 1 session', color: '#06B6D4' }
 ];
 
 const ssoFeatures = [
   'One login for all 6 platforms',
   'Institutional email verification',
-  'Role-based access (Student/Faculty/Admin)',
-  'Usage dashboard across platforms'
+  'Unified credit wallet'
 ];
 
 const SSOTiersSlide = () => {
@@ -67,15 +79,15 @@ const SSOTiersSlide = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-6"
+          className="text-center mb-5"
         >
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-3">
-            <Key className="h-4 w-4 text-blue-500" />
-            <span className="text-sm font-medium">SSO + Tiered Access</span>
+            <Coins className="h-4 w-4 text-yellow-500" />
+            <span className="text-sm font-medium">Credit-Based Pricing</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">Single Sign-On & Flexible Tiers</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">SSO + Universal Credits</h2>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-            One account, all platforms. Start basic, upgrade when needed.
+            One account, one credit wallet. Use across all platforms.
           </p>
         </motion.div>
 
@@ -84,21 +96,16 @@ const SSOTiersSlide = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="glass rounded-xl p-4 mb-6 border border-blue-500/30 bg-blue-500/5"
+          className="glass rounded-xl p-3 mb-4 border border-blue-500/30 bg-blue-500/5"
         >
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
-                <Shield className="h-5 w-5 text-blue-500" />
-              </div>
-              <div>
-                <h3 className="font-semibold">Single Sign-On (SSO)</h3>
-                <p className="text-xs text-muted-foreground">Powered by auth.foundryailabs.io</p>
-              </div>
+              <Shield className="h-5 w-5 text-blue-500" />
+              <span className="font-semibold text-sm">Single Sign-On (auth.foundryailabs.io)</span>
             </div>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex gap-2">
               {ssoFeatures.map((feature, index) => (
-                <span key={index} className="text-xs px-3 py-1 rounded-full bg-blue-500/10 text-blue-400">
+                <span key={index} className="text-xs px-2 py-1 rounded-full bg-blue-500/10 text-blue-400">
                   {feature}
                 </span>
               ))}
@@ -107,7 +114,7 @@ const SSOTiersSlide = () => {
         </motion.div>
 
         {/* Tier Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
           {tiers.map((tier, index) => (
             <motion.div
               key={index}
@@ -122,20 +129,20 @@ const SSOTiersSlide = () => {
                 </div>
               )}
               
-              <div className="text-center mb-3">
-                <div 
-                  className="w-10 h-10 rounded-full mx-auto mb-2 flex items-center justify-center text-white font-bold"
-                  style={{ backgroundColor: tier.color }}
-                >
-                  {tier.multiplier}
-                </div>
+              <div className="text-center mb-2">
                 <h3 className="font-bold text-lg">{tier.name}</h3>
                 <p className="text-xs text-muted-foreground">{tier.description}</p>
               </div>
 
-              <div className="text-center mb-3">
+              <div className="text-center mb-2">
                 <span className="text-2xl font-bold" style={{ color: tier.color }}>₹{tier.price}</span>
                 <span className="text-xs text-muted-foreground">{tier.period}</span>
+              </div>
+
+              <div className="glass rounded-lg p-2 mb-3 text-center" style={{ backgroundColor: `${tier.color}10` }}>
+                <div className="text-lg font-bold" style={{ color: tier.color }}>{tier.creditsYear}</div>
+                <div className="text-xs text-muted-foreground">credits/year</div>
+                <div className="text-xs text-muted-foreground">({tier.creditsMonth}/month)</div>
               </div>
 
               <div className="space-y-1">
@@ -150,28 +157,47 @@ const SSOTiersSlide = () => {
           ))}
         </div>
 
+        {/* Credit Usage Table */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="glass rounded-xl p-4 mb-4"
+        >
+          <h3 className="font-semibold mb-3 flex items-center gap-2">
+            <Coins className="h-4 w-4 text-yellow-500" />
+            Credit Usage Per Platform
+          </h3>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
+            {creditUsage.map((item, index) => (
+              <div key={index} className="text-center p-2 rounded-lg" style={{ backgroundColor: `${item.color}10` }}>
+                <div className="text-xs font-medium" style={{ color: item.color }}>{item.platform}</div>
+                <div className="text-xs text-muted-foreground mt-1">{item.cost}</div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Upgrade Flow */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="glass rounded-xl p-4"
+          className="glass rounded-xl p-3"
         >
-          <div className="flex items-center gap-2 mb-3">
-            <ArrowUpCircle className="h-5 w-5 text-green-500" />
-            <h3 className="font-semibold">Seamless Upgrade Flow</h3>
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              {['Start Basic', 'Use Platform', 'Hit 80% Quota', 'Get Notification', 'One-Click Upgrade'].map((step, index) => (
-                <div key={index} className="flex items-center">
-                  <span className="text-xs px-2 py-1 rounded-full bg-muted">{step}</span>
-                  {index < 4 && <Zap className="h-3 w-3 text-muted-foreground mx-1" />}
-                </div>
-              ))}
+              <ArrowUpCircle className="h-4 w-4 text-green-500" />
+              <span className="font-semibold text-sm">Upgrade Flow:</span>
             </div>
-            <div className="text-xs text-muted-foreground">
-              Pay difference • Instant activation • No downtime
+            <div className="flex items-center gap-2 text-xs">
+              <span className="px-2 py-1 rounded bg-muted">Hit 80%</span>
+              <Zap className="h-3 w-3" />
+              <span className="px-2 py-1 rounded bg-muted">Get Alert</span>
+              <Zap className="h-3 w-3" />
+              <span className="px-2 py-1 rounded bg-muted">Pay Diff</span>
+              <Zap className="h-3 w-3" />
+              <span className="px-2 py-1 rounded bg-green-500/20 text-green-400">Instant Upgrade</span>
             </div>
           </div>
         </motion.div>
