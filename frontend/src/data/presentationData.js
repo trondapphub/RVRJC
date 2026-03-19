@@ -134,7 +134,7 @@ export const metricsData = {
   subtitle: "Transforming RVRJC in 60 Days",
   metrics: [
     { value: "7000", label: "AI-Enabled Students", icon: "Users", color: "blue" },
-    { value: "300+", label: "AI Projects", icon: "Rocket", color: "orange" },
+    { value: "1,000+", label: "AI Projects (by Year 3)", icon: "Rocket", color: "orange" },
     { value: "12", label: "Indian Languages", icon: "Globe", color: "green" },
     { value: "60", label: "Days to Launch", icon: "Calendar", color: "purple" }
   ],
