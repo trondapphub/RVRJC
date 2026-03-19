@@ -15,6 +15,9 @@ import K12AcademySlide from '@/components/slides/K12AcademySlide';
 import SSOTiersSlide from '@/components/slides/SSOTiersSlide';
 import QuotaSlide from '@/components/slides/QuotaSlide';
 import QuotaArchitectureSlide from '@/components/slides/QuotaArchitectureSlide';
+import TransformationSlide from '@/components/slides/TransformationSlide';
+import PlacementImpactSlide from '@/components/slides/PlacementImpactSlide';
+import RankingImpactSlide from '@/components/slides/RankingImpactSlide';
 import MetricsSlide from '@/components/slides/MetricsSlide';
 import TimelineSlide from '@/components/slides/TimelineSlide';
 import PricingSlide from '@/components/slides/PricingSlide';
@@ -36,6 +39,9 @@ const slideComponents = {
   SSOTiersSlide,
   QuotaSlide,
   QuotaArchitectureSlide,
+  TransformationSlide,
+  PlacementImpactSlide,
+  RankingImpactSlide,
   MetricsSlide,
   TimelineSlide,
   PricingSlide,
