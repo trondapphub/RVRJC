@@ -1,61 +1,57 @@
 # RVRJC AI Center of Excellence - Interactive Presentation & Dashboard
 
 ## Original Problem Statement
-Enhance 3 documents (RVRJC_AI_CoE_Pitch.pptx, RVRJC_AI_CoE_Proposal.pdf, FoundryAI_RVRJC_Condensed.pdf) for a demo to RVRJC HODs by creating an interactive web presentation with dashboard.
-
-## User Personas
-- **Primary**: RVRJC Heads of Departments (HODs) - academic decision makers evaluating AI transformation partnership
-- **Secondary**: College administration, potential partners
+Enhance 3 documents for a demo to RVRJC HODs by creating an interactive web presentation with dashboard.
 
 ## Architecture
 ```
 Frontend: React 19 + Tailwind CSS + Framer Motion
-Backend: FastAPI (minimal)
 Deployment: AWS Lightsail (manual) via Nginx + Let's Encrypt SSL
 Domain: demo.foundryailabs.ai (Cloudflare DNS)
 ```
 
-## Current Slide Order (22 slides)
+## Current Slide Order (24 slides)
 1. Transformation - From College to AI Innovation Hub
 2. Placement Impact
 3. Ranking Impact
 4. Student Opportunities - What Students Will Build
 5. Career Impact - From Students to AI Engineers
-6. Hero - AI Transformation at RVRJC
-7. Problem - Current Reality
-8. Solution - FoundryAI Ecosystem
-9. Platforms - 6 Platforms Overview
-10. LLM Platform - Models, Datasets, Agents, Tools, Apps, Templates, Spaces
-11. Agent OS - Build & Sell on Marketplace
-12. Voice Agents - 3 Steps, 30+ Templates, Self-Pay Model
-13. Content Studio - AI Content Creation + Monetization
-14. CodeFoundry - Build Real Products + Freelance
-15. K-12 Academy - AI Tutor + Tutoring Revenue
-16. SSO & Tiers - Basic/Pro/Power (no Unlimited)
-17. Quota - Credit-Based Usage (3 tiers)
-18. Quota Architecture
-19. Metrics
-20. Timeline
-21. Pricing - ₹9,999/yr, ₹7 Cr investment
-22. CTA
+6. Earn Back Fees - 6 Ways to Earn ₹7,500+ Back (NEW)
+7. Earning Journey - Month-by-Month Path (NEW)
+8. Hero - AI Transformation at RVRJC
+9. Problem - Current Reality
+10. Solution - FoundryAI Ecosystem
+11. Platforms - 6 Platforms Overview
+12. LLM Platform - Models, Datasets, Agents, Tools, Apps, Templates, Spaces
+13. Agent OS - Build & Sell on Marketplace
+14. Voice Agents - 3 Steps, 30+ Templates, Self-Pay Model
+15. Content Studio - AI Content Creation + Monetization
+16. CodeFoundry - Build Real Products + Freelance
+17. K-12 Academy - AI Tutor + Tutoring Revenue
+18. SSO & Tiers - Basic/Pro/Power (no Unlimited)
+19. Quota - Credit-Based Usage (3 tiers)
+20. Quota Architecture
+21. Metrics
+22. Timeline
+23. Pricing - ₹9,999/yr, ₹7 Cr investment
+24. CTA
 
 ## Key Updates (Mar 19, 2026)
-- [x] Added Student Opportunities slide (5 building opportunities)
-- [x] Added Career Impact slide (portfolio, placement, packages, mic drop)
-- [x] Reordered: Impact slides (14-18) moved to front as slides 1-5
-- [x] Removed "Unlimited" tier from SSO and Quota slides
+- [x] Added Student Opportunities + Career Impact slides
+- [x] Reordered: Impact slides moved to front (slides 1-5)
+- [x] Removed "Unlimited" tier from SSO/Quota
 - [x] Investment updated to ₹7 Cr
-- [x] LLM Platform rewritten: 7 hub items (Models, Datasets, Agents, Tools, Apps, Templates, Spaces)
-- [x] Agent OS rewritten: 5 build items + marketplace monetization flow
-- [x] Voice Agents rewritten: 3 simple steps + 30+ templates + Discord + self-pay model
-- [x] All product slides now include student benefits & monetization sections
+- [x] LLM Platform: 7 hub items + student benefits
+- [x] Agent OS: marketplace monetization flow
+- [x] Voice Agents: 3 steps + self-pay model (₹9,999/yr)
+- [x] All product slides: student benefits & monetization sections
+- [x] Added "Earn Back Fees" slide (6 earning methods with real numbers)
+- [x] Added "Earning Journey" slide (6-month timeline + "Earn with AI" dashboard concept)
 
 ## Prioritized Backlog
 ### P0
 - [ ] Guide user to redeploy after content updates
 ### P1
-- [ ] Central Quota Service (FastAPI + Redis + MongoDB)
-- [ ] SSO implementation
-- [ ] Refactor presentationData.js
+- [ ] Central Quota Service, SSO, data file refactoring
 ### P2
 - [ ] PDF export, presenter notes, analytics tracking

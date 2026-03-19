@@ -240,6 +240,8 @@ export const slides = [
   { id: "ranking-impact", component: "RankingImpactSlide" },
   { id: "student-opportunities", component: "StudentOpportunitiesSlide" },
   { id: "career-impact", component: "CareerImpactSlide" },
+  { id: "earn-back", component: "EarnBackSlide" },
+  { id: "earning-journey", component: "EarningJourneySlide" },
   { id: "hero", component: "HeroSlide" },
   { id: "problem", component: "ProblemSlide" },
   { id: "solution", component: "SolutionSlide" },

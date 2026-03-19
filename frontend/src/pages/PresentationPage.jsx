@@ -20,6 +20,8 @@ import PlacementImpactSlide from '@/components/slides/PlacementImpactSlide';
 import RankingImpactSlide from '@/components/slides/RankingImpactSlide';
 import StudentOpportunitiesSlide from '@/components/slides/StudentOpportunitiesSlide';
 import CareerImpactSlide from '@/components/slides/CareerImpactSlide';
+import EarnBackSlide from '@/components/slides/EarnBackSlide';
+import EarningJourneySlide from '@/components/slides/EarningJourneySlide';
 import MetricsSlide from '@/components/slides/MetricsSlide';
 import TimelineSlide from '@/components/slides/TimelineSlide';
 import PricingSlide from '@/components/slides/PricingSlide';
@@ -46,6 +48,8 @@ const slideComponents = {
   RankingImpactSlide,
   StudentOpportunitiesSlide,
   CareerImpactSlide,
+  EarnBackSlide,
+  EarningJourneySlide,
   MetricsSlide,
   TimelineSlide,
   PricingSlide,
