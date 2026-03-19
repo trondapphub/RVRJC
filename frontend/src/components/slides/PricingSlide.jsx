@@ -162,7 +162,7 @@ const PricingSlide = () => {
         >
           <div className="glass inline-flex items-center gap-4 md:gap-6 px-6 py-3 rounded-2xl">
             <div className="text-center">
-              <div className="text-xl font-bold text-green-500">₹5.25 Cr</div>
+              <div className="text-xl font-bold text-green-500">₹7 Cr</div>
               <div className="text-xs text-muted-foreground">Total Investment</div>
             </div>
             <div className="w-px h-8 bg-border" />

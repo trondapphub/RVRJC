@@ -136,7 +136,7 @@ const CodeFoundrySlide = () => {
           })}
         </div>
 
-        {/* Comparison */}
+        {/* Student Benefits + Monetization */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -145,24 +145,24 @@ const CodeFoundrySlide = () => {
         >
           <div className="flex items-center gap-2 mb-3">
             <Sparkles className="h-4 w-4 text-orange-500" />
-            <span className="font-semibold text-sm">Traditional vs CodeFoundry</span>
+            <span className="font-semibold text-sm">Student Benefits & Monetization</span>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-xs">
-            <div className="p-2 rounded-lg bg-red-500/10">
-              <div className="text-red-400">Traditional</div>
-              <div className="text-muted-foreground">Learn syntax</div>
+            <div className="p-2 rounded-lg bg-orange-500/10">
+              <div className="text-orange-400 font-medium">Build Real Products</div>
+              <div className="text-muted-foreground">AI SaaS, chatbot platforms</div>
             </div>
             <div className="p-2 rounded-lg bg-green-500/10">
-              <div className="text-green-400">CodeFoundry</div>
-              <div className="text-muted-foreground">Build real products</div>
+              <div className="text-green-400 font-medium">Launch Startups</div>
+              <div className="text-muted-foreground">$15 per build, ship fast</div>
             </div>
-            <div className="p-2 rounded-lg bg-red-500/10">
-              <div className="text-red-400">Traditional</div>
-              <div className="text-muted-foreground">Debug manually</div>
+            <div className="p-2 rounded-lg bg-blue-500/10">
+              <div className="text-blue-400 font-medium">Freelance Income</div>
+              <div className="text-muted-foreground">Build apps for clients</div>
             </div>
-            <div className="p-2 rounded-lg bg-green-500/10">
-              <div className="text-green-400">CodeFoundry</div>
-              <div className="text-muted-foreground">AI self-fixes</div>
+            <div className="p-2 rounded-lg bg-purple-500/10">
+              <div className="text-purple-400 font-medium">Portfolio of Live Apps</div>
+              <div className="text-muted-foreground">Deployed with real URLs</div>
             </div>
           </div>
         </motion.div>

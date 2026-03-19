@@ -119,37 +119,33 @@ const K12AcademySlide = () => {
           })}
         </div>
 
-        {/* Stats Bar */}
+        {/* Student Benefits + Monetization */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="glass rounded-xl p-4 mb-4"
+          className="glass rounded-xl p-4 mb-4 border border-cyan-500/30 bg-cyan-500/5"
         >
-          <div className="flex items-center justify-around flex-wrap gap-4">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-cyan-500">108</div>
-              <div className="text-xs text-muted-foreground">K-12 Courses</div>
+          <div className="flex items-center gap-2 mb-3">
+            <GraduationCap className="h-5 w-5 text-cyan-500" />
+            <span className="font-semibold">Student Benefits & Monetization</span>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-xs">
+            <div className="p-2 rounded-lg bg-cyan-500/10">
+              <div className="text-cyan-400 font-medium">Learn Faster</div>
+              <div className="text-muted-foreground">AI tutor adapts to level</div>
             </div>
-            <div className="w-px h-8 bg-border hidden md:block" />
-            <div className="text-center">
-              <div className="text-2xl font-bold text-cyan-500">324</div>
-              <div className="text-xs text-muted-foreground">Cloud Labs</div>
+            <div className="p-2 rounded-lg bg-green-500/10">
+              <div className="text-green-400 font-medium">Better Grades</div>
+              <div className="text-muted-foreground">Step-by-step homework help</div>
             </div>
-            <div className="w-px h-8 bg-border hidden md:block" />
-            <div className="text-center">
-              <div className="text-2xl font-bold text-cyan-500">12</div>
-              <div className="text-xs text-muted-foreground">Languages</div>
+            <div className="p-2 rounded-lg bg-purple-500/10">
+              <div className="text-purple-400 font-medium">Tutor Others</div>
+              <div className="text-muted-foreground">Create paid tutoring content</div>
             </div>
-            <div className="w-px h-8 bg-border hidden md:block" />
-            <div className="text-center">
-              <div className="text-2xl font-bold text-cyan-500">24/7</div>
-              <div className="text-xs text-muted-foreground">AI Availability</div>
-            </div>
-            <div className="w-px h-8 bg-border hidden md:block" />
-            <div className="text-center">
-              <div className="text-2xl font-bold text-cyan-500">CBSE/ICSE</div>
-              <div className="text-xs text-muted-foreground">Aligned</div>
+            <div className="p-2 rounded-lg bg-orange-500/10">
+              <div className="text-orange-400 font-medium">12 Languages</div>
+              <div className="text-muted-foreground">Learn in your mother tongue</div>
             </div>
           </div>
         </motion.div>

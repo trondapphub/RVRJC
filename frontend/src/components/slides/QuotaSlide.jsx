@@ -4,8 +4,7 @@ import { Gauge, Shield, Bell, TrendingUp, Coins, Zap } from 'lucide-react';
 const tiers = [
   { name: 'Basic', price: '₹9,999', creditsYear: '90,000', creditsMonth: '7,500', color: '#3B82F6' },
   { name: 'Pro', price: '₹14,999', creditsYear: '180,000', creditsMonth: '15,000', color: '#8B5CF6' },
-  { name: 'Power', price: '₹21,999', creditsYear: '400,000', creditsMonth: '33,000', color: '#F97316' },
-  { name: 'Unlimited', price: '₹34,999', creditsYear: '1,000,000', creditsMonth: '83,000', color: '#10B981' }
+  { name: 'Power', price: '₹21,999', creditsYear: '400,000', creditsMonth: '33,000', color: '#F97316' }
 ];
 
 const creditCosts = [
@@ -63,7 +62,7 @@ const QuotaSlide = () => {
                 <TrendingUp className="h-5 w-5 text-green-500" />
                 Credits Per Tier
               </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="grid grid-cols-3 gap-3">
                 {tiers.map((tier, index) => (
                   <motion.div
                     key={index}

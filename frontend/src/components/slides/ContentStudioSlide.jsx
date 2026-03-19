@@ -127,7 +127,7 @@ const ContentStudioSlide = () => {
           })}
         </div>
 
-        {/* Use Case Example */}
+        {/* Student Benefits + Monetization */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -136,22 +136,22 @@ const ContentStudioSlide = () => {
         >
           <div className="flex items-center gap-2 mb-3">
             <Sparkles className="h-5 w-5 text-pink-500" />
-            <span className="font-semibold">Student Use Case</span>
+            <span className="font-semibold">Student Benefits & Monetization</span>
           </div>
           <div className="flex items-center justify-around flex-wrap gap-4 text-center">
             <div>
-              <div className="text-xs text-muted-foreground">Input</div>
-              <div className="text-sm font-medium">"DevOps roadmap for beginners"</div>
+              <div className="text-xs text-muted-foreground">Create</div>
+              <div className="text-sm font-medium">Reels, videos, scripts</div>
             </div>
             <div className="text-pink-500">→</div>
             <div>
-              <div className="text-xs text-muted-foreground">Output</div>
-              <div className="text-sm font-medium">Viral hook + Script + Visuals + Voice + Captions</div>
+              <div className="text-xs text-muted-foreground">Publish</div>
+              <div className="text-sm font-medium">Instagram, YouTube, TikTok</div>
             </div>
             <div className="text-pink-500">→</div>
             <div>
-              <div className="text-xs text-muted-foreground">Result</div>
-              <div className="text-sm font-medium text-pink-400">Published to Instagram + YouTube</div>
+              <div className="text-xs text-muted-foreground">Monetize</div>
+              <div className="text-sm font-medium text-pink-400">Freelance content + Ad revenue</div>
             </div>
           </div>
         </motion.div>

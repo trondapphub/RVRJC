@@ -30,23 +30,11 @@ const tiers = [
     name: 'Power',
     price: '21,999',
     period: '/year',
-    description: 'For AI enthusiasts',
+    description: 'For AI enthusiasts & researchers',
     creditsYear: '400,000',
     creditsMonth: '33,000',
     color: '#F97316',
-    features: ['4.4x monthly credits', 'Early access', 'Upgrade: +₹12,000'],
-    popular: false,
-    isBase: false
-  },
-  {
-    name: 'Unlimited',
-    price: '34,999',
-    period: '/year',
-    description: 'For researchers',
-    creditsYear: '1,000,000',
-    creditsMonth: '83,000',
-    color: '#10B981',
-    features: ['Soft cap (fair use)', 'VIP support', 'Upgrade: +₹25,000'],
+    features: ['4.4x monthly credits', 'Early access features', 'VIP support'],
     popular: false,
     isBase: false
   }
@@ -103,7 +91,7 @@ const SSOTiersSlide = () => {
         </motion.div>
 
         {/* Tier Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+        <div className="grid grid-cols-3 gap-3 mb-4">
           {tiers.map((tier, index) => (
             <motion.div
               key={index}
@@ -198,11 +186,7 @@ const SSOTiersSlide = () => {
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span>Basic → Power</span>
-                <span className="font-bold text-green-500">+₹10,500</span>
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <span>Basic → Unlimited</span>
-                <span className="font-bold text-green-500">+₹22,500</span>
+                <span className="font-bold text-green-500">+₹12,000</span>
               </div>
             </div>
             <div className="mt-2 text-xs text-muted-foreground">

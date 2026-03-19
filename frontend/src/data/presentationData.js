@@ -235,6 +235,11 @@ export const ctaData = {
 };
 
 export const slides = [
+  { id: "transformation", component: "TransformationSlide" },
+  { id: "placement-impact", component: "PlacementImpactSlide" },
+  { id: "ranking-impact", component: "RankingImpactSlide" },
+  { id: "student-opportunities", component: "StudentOpportunitiesSlide" },
+  { id: "career-impact", component: "CareerImpactSlide" },
   { id: "hero", component: "HeroSlide" },
   { id: "problem", component: "ProblemSlide" },
   { id: "solution", component: "SolutionSlide" },
@@ -248,11 +253,6 @@ export const slides = [
   { id: "sso-tiers", component: "SSOTiersSlide" },
   { id: "quota", component: "QuotaSlide" },
   { id: "quota-architecture", component: "QuotaArchitectureSlide" },
-  { id: "transformation", component: "TransformationSlide" },
-  { id: "placement-impact", component: "PlacementImpactSlide" },
-  { id: "ranking-impact", component: "RankingImpactSlide" },
-  { id: "student-opportunities", component: "StudentOpportunitiesSlide" },
-  { id: "career-impact", component: "CareerImpactSlide" },
   { id: "metrics", component: "MetricsSlide" },
   { id: "timeline", component: "TimelineSlide" },
   { id: "pricing", component: "PricingSlide" },
