@@ -38,7 +38,7 @@ const RankingImpactSlide = () => {
             <span className="text-sm font-medium">National Recognition</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold mb-3">Ranking & Visibility Impact</h2>
-          <p className="text-lg text-muted-foreground">How RVRJC climbs the national rankings</p>
+          <p className="text-lg text-muted-foreground">3-Year engagement to position RVRJC in India's Top 50 colleges</p>
         </motion.div>
 
         {/* Main Content */}
@@ -104,8 +104,8 @@ const RankingImpactSlide = () => {
                   <div className="text-xs text-muted-foreground">Student Startups</div>
                 </div>
                 <div className="text-center p-4 rounded-xl bg-background/50">
-                  <div className="text-3xl font-bold text-blue-500">+50-150</div>
-                  <div className="text-xs text-muted-foreground">Ranking Positions</div>
+                  <div className="text-3xl font-bold text-blue-500">Top 50</div>
+                  <div className="text-xs text-muted-foreground">National Ranking</div>
                 </div>
                 <div className="text-center p-4 rounded-xl bg-background/50">
                   <div className="text-3xl font-bold text-orange-500">#1</div>
@@ -161,8 +161,9 @@ const RankingImpactSlide = () => {
           className="glass rounded-xl p-4 text-center border border-yellow-500/30"
         >
           <div className="text-lg font-semibold">
-            <span className="text-yellow-500">Goal:</span> RVRJC becomes the{' '}
-            <span className="gradient-text">Top AI-Enabled College</span> in the region
+            <span className="text-yellow-500">3-Year Goal:</span> RVRJC reaches{' '}
+            <span className="gradient-text">India's Top 50</span> & becomes the{' '}
+            <span className="text-yellow-400">#1 AI-Enabled College</span> in the region
           </div>
         </motion.div>
       </div>
