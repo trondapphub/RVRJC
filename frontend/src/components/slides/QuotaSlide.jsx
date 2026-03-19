@@ -3,8 +3,8 @@ import { Gauge, Shield, Bell, TrendingUp, Coins, Zap } from 'lucide-react';
 
 const tiers = [
   { name: 'Basic', price: '₹9,999', creditsYear: '90,000', creditsMonth: '7,500', color: '#3B82F6' },
-  { name: 'Pro', price: '₹14,999', creditsYear: '180,000', creditsMonth: '15,000', color: '#8B5CF6' },
-  { name: 'Power', price: '₹21,999', creditsYear: '400,000', creditsMonth: '33,000', color: '#F97316' }
+  { name: 'Pro', price: '₹20,000', creditsYear: '180,000', creditsMonth: '15,000', color: '#8B5CF6' },
+  { name: 'Power', price: '₹40,000', creditsYear: '360,000', creditsMonth: '30,000', color: '#F97316' }
 ];
 
 const creditCosts = [

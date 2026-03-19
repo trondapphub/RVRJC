@@ -16,25 +16,25 @@ const tiers = [
   },
   {
     name: 'Pro',
-    price: '14,999',
+    price: '20,000',
     period: '/year',
     description: 'For regular heavy users',
     creditsYear: '180,000',
     creditsMonth: '15,000',
     color: '#8B5CF6',
-    features: ['2x monthly credits', 'Priority support', 'Upgrade: +₹5,000'],
+    features: ['2x monthly credits', 'Priority support', 'Upgrade: +₹10,000'],
     popular: true,
     isBase: false
   },
   {
     name: 'Power',
-    price: '21,999',
+    price: '40,000',
     period: '/year',
     description: 'For AI enthusiasts & researchers',
-    creditsYear: '400,000',
-    creditsMonth: '33,000',
+    creditsYear: '360,000',
+    creditsMonth: '30,000',
     color: '#F97316',
-    features: ['4.4x monthly credits', 'Early access features', 'VIP support'],
+    features: ['4x monthly credits', 'Early access features', 'VIP support'],
     popular: false,
     isBase: false
   }
@@ -182,11 +182,11 @@ const SSOTiersSlide = () => {
             <div className="space-y-2">
               <div className="flex items-center justify-between text-sm">
                 <span>Basic → Pro</span>
-                <span className="font-bold text-green-500">+₹4,500</span>
+                <span className="font-bold text-green-500">+₹10,000</span>
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span>Basic → Power</span>
-                <span className="font-bold text-green-500">+₹12,000</span>
+                <span className="font-bold text-green-500">+₹30,000</span>
               </div>
             </div>
             <div className="mt-2 text-xs text-muted-foreground">
