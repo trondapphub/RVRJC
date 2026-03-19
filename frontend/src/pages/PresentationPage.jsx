@@ -145,38 +145,38 @@ const PresentationPage = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="w-full h-full"
+          className="w-full h-full overflow-y-auto md:overflow-hidden pt-12 md:pt-0 pb-4 md:pb-0"
         >
           <CurrentSlideComponent />
         </motion.div>
       </AnimatePresence>
 
-      {/* Navigation controls */}
-      <div className="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-2 z-50">
+      {/* Navigation controls - side on desktop, bottom-right on mobile */}
+      <div className="fixed right-2 bottom-16 md:bottom-auto md:right-6 md:top-1/2 md:-translate-y-1/2 flex flex-row md:flex-col gap-1 md:gap-2 z-50">
         <Button
           variant="outline"
           size="icon"
           onClick={prevSlide}
           disabled={currentSlide === 0 || isAnimating}
-          className="rounded-full glass"
+          className="rounded-full glass w-8 h-8 md:w-10 md:h-10"
           data-testid="prev-slide-btn"
         >
-          <ChevronUp className="h-4 w-4" />
+          <ChevronUp className="h-3 w-3 md:h-4 md:w-4" />
         </Button>
         <Button
           variant="outline"
           size="icon"
           onClick={nextSlide}
           disabled={currentSlide === slides.length - 1 || isAnimating}
-          className="rounded-full glass"
+          className="rounded-full glass w-8 h-8 md:w-10 md:h-10"
           data-testid="next-slide-btn"
         >
-          <ChevronDown className="h-4 w-4" />
+          <ChevronDown className="h-3 w-3 md:h-4 md:w-4" />
         </Button>
       </div>
 
-      {/* Slide indicators */}
-      <div className="fixed right-6 bottom-8 flex flex-col gap-2 z-50">
+      {/* Slide indicators - hidden on mobile via CSS */}
+      <div className="fixed right-6 bottom-8 flex flex-col gap-2 z-50" data-testid="slide-indicators">
         {slides.map((slide, index) => (
           <button
             key={slide.id}
@@ -193,31 +193,31 @@ const PresentationPage = () => {
       </div>
 
       {/* Top bar */}
-      <div className="fixed top-0 left-0 right-0 p-4 flex items-center justify-between z-50">
-        <div className="flex items-center gap-4">
+      <div className="fixed top-0 left-0 right-0 p-2 md:p-4 flex items-center justify-between z-50">
+        <div className="flex items-center gap-2 md:gap-4">
           <Link to="/">
-            <Button variant="ghost" size="icon" className="rounded-full glass" data-testid="home-btn">
-              <Home className="h-4 w-4" />
+            <Button variant="ghost" size="icon" className="rounded-full glass w-8 h-8 md:w-10 md:h-10" data-testid="home-btn">
+              <Home className="h-3 w-3 md:h-4 md:w-4" />
             </Button>
           </Link>
-          <div className="glass px-4 py-2 rounded-full">
-            <span className="text-sm font-medium text-muted-foreground">
+          <div className="glass px-3 py-1 md:px-4 md:py-2 rounded-full">
+            <span className="text-xs md:text-sm font-medium text-muted-foreground">
               {currentSlide + 1} / {slides.length}
             </span>
           </div>
         </div>
         
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 md:gap-2">
           <Button 
             variant="ghost" 
             size="icon" 
             onClick={() => setIsDark(!isDark)}
-            className="rounded-full glass"
+            className="rounded-full glass w-8 h-8 md:w-10 md:h-10"
             data-testid="theme-toggle-btn"
           >
-            {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            {isDark ? <Sun className="h-3 w-3 md:h-4 md:w-4" /> : <Moon className="h-3 w-3 md:h-4 md:w-4" />}
           </Button>
-          <Link to="/">
+          <Link to="/" className="hidden md:block">
             <Button variant="outline" className="rounded-full glass gap-2" data-testid="dashboard-link">
               <Presentation className="h-4 w-4" />
               Dashboard
@@ -237,7 +237,7 @@ const PresentationPage = () => {
       </div>
 
       {/* Keyboard hints */}
-      <div className="fixed bottom-8 left-6 glass px-4 py-2 rounded-full text-xs text-muted-foreground z-50">
+      <div className="fixed bottom-8 left-4 md:left-6 glass px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs text-muted-foreground z-50 hidden md:block">
         Use ↑↓ or swipe to navigate
       </div>
     </div>
