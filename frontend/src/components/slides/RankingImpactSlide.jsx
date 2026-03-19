@@ -10,9 +10,9 @@ const rankingFactors = [
 ];
 
 const timeline = [
-  { period: '0-6 months', milestone: 'AI CoE Launch + Initial Projects', status: 'foundation' },
-  { period: '6-12 months', milestone: 'Student Startups + Hackathons', status: 'growth' },
-  { period: '12-18 months', milestone: 'Ranking Improvement + Recognition', status: 'impact' }
+  { period: 'Year 1', milestone: 'Students explore ecosystem, start building agents, templates, apps, datasets, LLMs & research papers', status: 'foundation', label: 'Foundation' },
+  { period: 'Year 2', milestone: 'Overall improvements visible — placements, startups, research output & brand perception rise', status: 'growth', label: 'Improvements' },
+  { period: 'Year 3', milestone: 'High impact — top rankings, national recognition, industry partnerships & startup culture', status: 'impact', label: 'High Impact' }
 ];
 
 const RankingImpactSlide = () => {
@@ -93,7 +93,7 @@ const RankingImpactSlide = () => {
           >
             {/* Big Numbers */}
             <div className="glass rounded-2xl p-6 border border-yellow-500/30 bg-gradient-to-br from-yellow-500/5 to-orange-500/5">
-              <h3 className="font-semibold mb-4 text-center">Expected Outcomes (12-18 months)</h3>
+              <h3 className="font-semibold mb-4 text-center">Expected Outcomes (by Year 3)</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 rounded-xl bg-background/50">
                   <div className="text-3xl font-bold text-green-500">+20-40%</div>
@@ -116,7 +116,7 @@ const RankingImpactSlide = () => {
 
             {/* Timeline */}
             <div className="glass rounded-2xl p-6 border border-border">
-              <h3 className="font-semibold mb-4">Impact Timeline</h3>
+              <h3 className="font-semibold mb-4">3-Year Impact Timeline</h3>
               <div className="space-y-3">
                 {timeline.map((item, index) => (
                   <motion.div
@@ -124,15 +124,27 @@ const RankingImpactSlide = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 + index * 0.1 }}
-                    className="flex items-center gap-3"
+                    className="flex items-start gap-3"
                   >
-                    <div className={`w-3 h-3 rounded-full ${
-                      item.status === 'foundation' ? 'bg-blue-500' : 
-                      item.status === 'growth' ? 'bg-purple-500' : 'bg-green-500'
-                    }`} />
-                    <div className="flex-1">
-                      <span className="text-xs text-muted-foreground">{item.period}</span>
-                      <div className="text-sm font-medium">{item.milestone}</div>
+                    <div className="flex flex-col items-center">
+                      <div className={`w-3 h-3 rounded-full ${
+                        item.status === 'foundation' ? 'bg-blue-500' : 
+                        item.status === 'growth' ? 'bg-purple-500' : 'bg-green-500'
+                      }`} />
+                      {index < 2 && <div className="w-px h-8 bg-border" />}
+                    </div>
+                    <div className="flex-1 -mt-0.5">
+                      <div className="flex items-center gap-2">
+                        <span className={`text-xs font-bold ${
+                          item.status === 'foundation' ? 'text-blue-400' : 
+                          item.status === 'growth' ? 'text-purple-400' : 'text-green-400'
+                        }`}>{item.period}</span>
+                        <span className={`text-xs px-2 py-0.5 rounded-full ${
+                          item.status === 'foundation' ? 'bg-blue-500/15 text-blue-400' : 
+                          item.status === 'growth' ? 'bg-purple-500/15 text-purple-400' : 'bg-green-500/15 text-green-400'
+                        }`}>{item.label}</span>
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-1">{item.milestone}</div>
                     </div>
                   </motion.div>
                 ))}
