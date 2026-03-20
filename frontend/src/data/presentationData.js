@@ -264,6 +264,7 @@ export const slides = [
   { id: "quota-architecture", component: "QuotaArchitectureSlide" },
   { id: "metrics", component: "MetricsSlide" },
   { id: "timeline", component: "TimelineSlide" },
+  { id: "upstream-cost", component: "UpstreamCostSlide" },
   { id: "pricing", component: "PricingSlide" },
   { id: "cta", component: "CTASlide" }
 ];
