@@ -12,6 +12,10 @@ import VoiceAgentsSlide from '@/components/slides/VoiceAgentsSlide';
 import ContentStudioSlide from '@/components/slides/ContentStudioSlide';
 import CodeFoundrySlide from '@/components/slides/CodeFoundrySlide';
 import K12AcademySlide from '@/components/slides/K12AcademySlide';
+import SSOAuthSlide from '@/components/slides/SSOAuthSlide';
+import MultiTenantSlide from '@/components/slides/MultiTenantSlide';
+import StudentPortalSlide from '@/components/slides/StudentPortalSlide';
+import AdminGamificationSlide from '@/components/slides/AdminGamificationSlide';
 import SSOTiersSlide from '@/components/slides/SSOTiersSlide';
 import QuotaSlide from '@/components/slides/QuotaSlide';
 import QuotaArchitectureSlide from '@/components/slides/QuotaArchitectureSlide';
@@ -43,6 +47,10 @@ const slideComponents = {
   ContentStudioSlide,
   CodeFoundrySlide,
   K12AcademySlide,
+  SSOAuthSlide,
+  MultiTenantSlide,
+  StudentPortalSlide,
+  AdminGamificationSlide,
   SSOTiersSlide,
   QuotaSlide,
   QuotaArchitectureSlide,
