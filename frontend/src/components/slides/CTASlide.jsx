@@ -88,7 +88,7 @@ const CTASlide = () => {
             <div className="flex-shrink-0">
               <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-500/40">
                 <img
-                  src="/founder.png"
+                  src="/founder.jpg"
                   alt="SasiMohan Motaparthy"
                   className="w-full h-full object-cover"
                 />

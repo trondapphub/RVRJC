@@ -21,7 +21,7 @@ const FounderIntroSlide = () => {
         >
           <div className="w-28 h-28 rounded-full overflow-hidden border-3 border-blue-500/50 mx-auto shadow-lg shadow-blue-500/20">
             <img
-              src="/founder.png"
+              src="/founder.jpg"
               alt="SasiMohan Motaparthy"
               className="w-full h-full object-cover"
             />
