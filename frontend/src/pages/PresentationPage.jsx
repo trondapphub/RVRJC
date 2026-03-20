@@ -16,6 +16,7 @@ import SSOAuthSlide from '@/components/slides/SSOAuthSlide';
 import MultiTenantSlide from '@/components/slides/MultiTenantSlide';
 import StudentPortalSlide from '@/components/slides/StudentPortalSlide';
 import AdminGamificationSlide from '@/components/slides/AdminGamificationSlide';
+import CurriculumSlide from '@/components/slides/CurriculumSlide';
 import SSOTiersSlide from '@/components/slides/SSOTiersSlide';
 import QuotaSlide from '@/components/slides/QuotaSlide';
 import QuotaArchitectureSlide from '@/components/slides/QuotaArchitectureSlide';
@@ -52,6 +53,7 @@ const slideComponents = {
   MultiTenantSlide,
   StudentPortalSlide,
   AdminGamificationSlide,
+  CurriculumSlide,
   SSOTiersSlide,
   QuotaSlide,
   QuotaArchitectureSlide,

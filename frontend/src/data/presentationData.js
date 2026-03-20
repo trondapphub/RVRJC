@@ -259,6 +259,7 @@ export const slides = [
   { id: "multi-tenant", component: "MultiTenantSlide" },
   { id: "student-portal", component: "StudentPortalSlide" },
   { id: "admin-gamification", component: "AdminGamificationSlide" },
+  { id: "curriculum", component: "CurriculumSlide" },
   { id: "sso-tiers", component: "SSOTiersSlide" },
   { id: "quota", component: "QuotaSlide" },
   { id: "quota-architecture", component: "QuotaArchitectureSlide" },
