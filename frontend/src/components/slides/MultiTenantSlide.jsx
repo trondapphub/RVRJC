@@ -68,7 +68,7 @@ const MultiTenantSlide = () => {
             <div className="font-bold text-sm text-blue-400">Per-Student Billing</div>
             <div className="text-2xl font-bold text-blue-400 my-1">₹9,999</div>
             <div className="text-xs text-muted-foreground">per student / year</div>
-            <div className="text-xs text-muted-foreground mt-1">Auto-assign 3,000 credits + 300K tokens</div>
+            <div className="text-xs text-muted-foreground mt-1">Auto-assign 7,500 credits/year</div>
           </div>
           <div className="glass rounded-xl p-4 border border-green-500/30 bg-green-500/5 text-center">
             <Building2 className="h-5 w-5 text-green-400 mx-auto mb-2" />
@@ -103,7 +103,7 @@ const MultiTenantSlide = () => {
             <span className="text-muted-foreground">→</span>
             <div className="p-2 rounded-lg bg-green-500/10">
               <div className="font-medium text-green-400">Assign Credits</div>
-              <div className="text-muted-foreground">3,000 + 300K tokens</div>
+              <div className="text-muted-foreground">7,500 credits/year</div>
             </div>
             <span className="text-muted-foreground">→</span>
             <div className="p-2 rounded-lg bg-orange-500/10">
