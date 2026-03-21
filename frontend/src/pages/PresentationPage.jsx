@@ -33,6 +33,7 @@ import EarningJourneySlide from '@/components/slides/EarningJourneySlide';
 import MetricsSlide from '@/components/slides/MetricsSlide';
 import TimelineSlide from '@/components/slides/TimelineSlide';
 import UpstreamCostSlide from '@/components/slides/UpstreamCostSlide';
+import PlacementGuaranteeSlide from '@/components/slides/PlacementGuaranteeSlide';
 import PricingSlide from '@/components/slides/PricingSlide';
 import CTASlide from '@/components/slides/CTASlide';
 import { Button } from '@/components/ui/button';
@@ -70,6 +71,7 @@ const slideComponents = {
   MetricsSlide,
   TimelineSlide,
   UpstreamCostSlide,
+  PlacementGuaranteeSlide,
   PricingSlide,
   CTASlide
 };

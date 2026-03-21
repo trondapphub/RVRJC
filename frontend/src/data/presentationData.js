@@ -266,6 +266,7 @@ export const slides = [
   { id: "metrics", component: "MetricsSlide" },
   { id: "timeline", component: "TimelineSlide" },
   { id: "upstream-cost", component: "UpstreamCostSlide" },
+  { id: "placement-guarantee", component: "PlacementGuaranteeSlide" },
   { id: "pricing", component: "PricingSlide" },
   { id: "cta", component: "CTASlide" }
 ];
